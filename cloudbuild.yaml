@@ -10,9 +10,7 @@ steps:
   args:
   - run
   - --filename=gke.yaml
-  - --image=gcr.io/$PROJECT_ID/devops-project-465603
+  - --image=gcr.io/$PROJECT_ID/devops-project-465603:latest
   - --location=us-central1-a
   - --cluster=gcp-devops-project
   - --namespace=gcp-devops-prod
-options:
-  logging: CLOUD_LOGGING_ONLY
